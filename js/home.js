@@ -24,20 +24,21 @@ console.log('loaded');
    })
 
 
-
    function logout() {
     console.log('Logout function called');
     if (currentUser.islogedin) {
         console.log('User is logged in, logging out...');
         currentUser.islogedin = false;
         localStorage.setItem('currentUser', JSON.stringify(currentUser));
+        window.location.href = "index.html";
     } else {
         console.log('No user is logged in or missing properties.');
         currentUser = {};
         localStorage.setItem('currentUser', JSON.stringify(currentUser));
-        open("index.html")
+        window.location.href = "index.html";
     }
 }
+
 logoutBtn.addEventListener('click',function(){
     console.log('Logout button clicked');
     logout();
