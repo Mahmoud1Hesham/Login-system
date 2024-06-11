@@ -35,7 +35,7 @@ console.log('loaded');
         console.log('No user is logged in or missing properties.');
         currentUser = {};
         localStorage.setItem('currentUser', JSON.stringify(currentUser));
-        window.location.href = '../index.html';
+        open("index.html",'_self');
     }
 }
 logoutBtn.addEventListener('click',function(){
