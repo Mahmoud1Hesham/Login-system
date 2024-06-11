@@ -1,0 +1,43 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar container-fluid d-flex justify-content-around align-items-center p-2">
+        <h2 class="text-white h5">SMART LOGIN</h2>
+        <span id="welcome" class="h5">Welcome</span>
+        <button id="logout" class="border-warning border p-2 rounded-1">Logout</button>
+    </nav>
+    <nav class="container d-flex justify-content-center my-5" id="taps">
+        <div class="nav nav-tabs border-bottom-0" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-pizza-tab" data-category="pizza" data-bs-toggle="tab" data-bs-target="#nav-pizza"
+                type="button" role="tab" aria-controls="nav-pizza" aria-selected="true">Pizza</button>
+            <button class="nav-link" id="nav-pasta-tab" data-category="pasta" data-bs-toggle="tab" data-bs-target="#nav-pasta" type="button"
+                role="tab" aria-controls="nav-pasta" aria-selected="false">Pasta</button>
+            <button class="nav-link" id="nav-tacos-tab" data-category="fries" data-bs-toggle="tab" data-bs-target="#nav-tacos" type="button"
+                role="tab" aria-controls="nav-tacos" aria-selected="false">Fries</button>
+            <button class="nav-link" id="nav-cake-tab" data-category="cake" data-bs-toggle="tab" data-bs-target="#nav-cake"
+                type="button" role="tab" aria-controls="nav-cake" aria-selected="false">Cake</button>
+        </div>
+    </nav>
+    <div class="container api-content">
+        <div id="content" class="row">
+            <!-- Dynamic content will be inserted here -->
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>

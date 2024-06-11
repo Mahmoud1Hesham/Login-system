@@ -1,0 +1,126 @@
+body {
+  background-color: #24353f;
+  font-family: "Titillium Web", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #bababa !important;
+}
+.form-control {
+  color: white !important;
+}
+.container .content {
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+  h1 {
+    color: #17a2b8;
+  }
+  button {
+    border-color: #17a2b8;
+    background-color: transparent;
+    color: #17a2b8;
+    border: 1px solid;
+    transition: all 0.2s;
+  }
+  button:hover {
+    background-color: #17a2b8;
+    color: white;
+    border-color: #17a2b8;
+  }
+  .options {
+    color: white;
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+}
+.navbar {
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+  button {
+    transition: all 0.2s;
+    color: gray;
+    background-color: transparent;
+  }
+  button:hover {
+    color: white;
+    background-color: #ffc107;
+  }
+  span {
+    color: #17a2b8 !important;
+  }
+}
+nav .nav-tabs .nav-link {
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  position: relative;
+  background-color: #24353f;
+}
+.nav-link,
+.nav-tabs .nav-link.active {
+  background-color: transparent !important;
+  color: #17a2b8;
+}
+.nav-link::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #17a2b8;
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  transition: all 0.5s;
+}
+.nav-tabs .nav-link.active::after {
+  width: 100%;
+}
+#taps {
+  position: relative;
+  box-shadow: -5px 2px 54px 1px rgba(0, 0, 0, 1);
+  width: 30%;
+  height: 50px;
+}
+.api-content {
+  figure {
+    overflow: hidden;
+    position: relative;
+  }
+  img {
+    transition: all 0.5s;
+    object-fit: contain;
+    height: 250px;
+  }
+  /* img:hover {
+    scale: 1.2;
+  } */
+  figcaption {
+    position: absolute;
+    bottom: 0%;
+    /* left: 100%; */
+    top: 100%;
+    right: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.5s;
+  }
+  figure:hover figcaption {
+    top: 0;
+    right: 0;
+  }
+  figure:hover img {
+    scale: 1.2;
+  }
+}
